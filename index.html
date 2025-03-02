@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="timer-container">
+            <div class="timer">
+                <div class="timer-unit">
+                    <div class="timer-value days">00</div>
+                    <div class="timer-label">Days</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value hours">00</div>
+                    <div class="timer-label">Hours</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value minutes">00</div>
+                    <div class="timer-label">Minutes</div>
+                </div>
+                <div class="timer-unit">
+                    <div class="timer-value seconds">00</div>
+                    <div class="timer-label">Seconds</div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="title text-element">Hey There!</h1>
+        <h2 class="subtitle text-element">Guess what day it is?</h2>
+        <p class="message text-element">It's your special day!</p>
+        <p class="wish text-element">May your day be filled with joy, laughter, and everything you love</p>
+        <p class="final-words text-element">Happy Birthday!</p>
+        <button class="replay-btn">Play Again</button>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="photo-gallery">
+        <h3 class="gallery-title">Happy Birthday!</h3>
+        <!-- Colored divs in a grid - will be generated via JS -->
+    </div>
+    <audio id="birthdayMusic" preload="auto" loop>
+        <source src="static/audio/acousticbreeze.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="sound-control-btn">
+        <span class="sound-on">🔊</span>
+        <span class="sound-off" style="display: none;">🔇</span>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
